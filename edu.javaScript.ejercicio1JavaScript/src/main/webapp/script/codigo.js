@@ -203,6 +203,7 @@ function informacionCadena(cadenaTexto){
 	// Vamos a recorrer la cadena y comprobando si cada caracter es mayuscula, minuscula
 	// Si es mayuscula asignaremos la variable como true
 	// Si es minuscula asignaremos la variable como true
+	/*
 	let esMayuscula = false, esMinuscula = false;
 	let letra = "";
 	for(let i=0; i < cadenaTexto.length; i++){
@@ -223,5 +224,13 @@ function informacionCadena(cadenaTexto){
 		document.write("El texto: \"" + cadenaTexto + "\" esta en mayusculas");
 	else if(esMinuscula == true)
 		document.write("El texto: \"" + cadenaTexto + "\" esta en minusculas");
+		
+	*/	
+	if(cadenaTexto == cadenaTexto.toUpperCase() && !(cadenaTexto == cadenaTexto.toLowerCase()))
+		document.write("El texto: \"" + cadenaTexto + "\" esta en mayusculas");
+	else if(cadenaTexto == cadenaTexto.toLowerCase())
+		document.write("El texto: \"" + cadenaTexto + "\" esta en minusculas");
+	else
+		document.write("El texto: \"" + cadenaTexto + "\" esta en mayusculas y en minusculas");
 }
 
